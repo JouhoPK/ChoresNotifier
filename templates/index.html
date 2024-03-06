@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chores</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='swipe.css') }}"/>
+
+    <!--css file-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+    <!-- Swiper JS -->
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <i class="fas fa-angle-left" id="left"></i>
+      <ul class="carousel">
+        <li class="card" id="dishes" >
+          <div class="img">
+            <img src="{{ url_for('static', filename='dishes.jpeg') }}" alt="" draggable="false" />
+          </div>
+
+          <h2>Dishes</h2>
+          <span>Request Dishes?</span>
+          <form action="/my-link/">
+            <input type="submit" value="Request" />
+          </form>
+        </li>
+
+        <li class="card", id="laundry">
+          <div class="img">
+            <img src="{{ url_for('static', filename='clothes.jpeg') }}" alt="" draggable="false" />
+          </div>
+
+          <h2>Laundry</h2>
+          <span>Request Laundry?</span>
+          <form action="/my-link/">
+            <input type="submit" value="Request" />
+          </form>
+        </li>
+
+        <li class="card" id="trash">
+          <div class="img">
+            <img src="{{ url_for('static', filename='trash.png') }}" alt="" draggable="false" />
+          </div>
+
+          <h2>Trash</h2>
+          <span>Request Trash to be Taken Out?</span>
+          <form action="/my-link/">
+            <input type="submit" value="Request" />
+        </form>
+        </li>
+
+        
+      </ul>
+      <i class="fas fa-angle-right" id="right"></i>
+    </div>
+
+    
+  </body>
+</html>
