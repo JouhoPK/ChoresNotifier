@@ -16,8 +16,11 @@
 
     <!-- Swiper JS -->
     <script src="{{ url_for('static', filename='app.js') }}"></script>
+    
   </head>
   <body>
+    <h1>Amount of dishes: {{ data }}</h1>
+    
     <div class="wrapper">
       <i class="fas fa-angle-left" id="left"></i>
       <ul class="carousel">
@@ -28,7 +31,7 @@
 
           <h2>Dishes</h2>
           <span>Request Dishes?</span>
-          <form action="/my-link/">
+          <form action="/my-link1/">
             <input type="submit" value="Request" />
           </form>
         </li>
@@ -40,7 +43,7 @@
 
           <h2>Laundry</h2>
           <span>Request Laundry?</span>
-          <form action="/my-link/">
+          <form action="/my-link2/">
             <input type="submit" value="Request" />
           </form>
         </li>
@@ -52,7 +55,7 @@
 
           <h2>Trash</h2>
           <span>Request Trash to be Taken Out?</span>
-          <form action="/my-link/">
+          <form action="/my-link3/">
             <input type="submit" value="Request" />
         </form>
         </li>
