@@ -1,5 +1,3 @@
-/* Created by Tivotal */
-
 let carousel = document.querySelector(".carousel");
 let btns = document.querySelectorAll(".wrapper i");
 let carouselChildren = [...carousel.children];
